@@ -138,12 +138,3 @@ Blog.prototype.refreshTimeDisplay = function(){
 };
 
 
-
-var blogInstance = null;
-
-$(document).ready(function(){
-    if(!blogInstance){
-        blogInstance = new Blog();
-    }
-});
-
