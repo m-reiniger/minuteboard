@@ -1,0 +1,249 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    /*background-color: #d9edf7;*/
+    /*background-color: #e1edf7;*/
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.navbar-brand{
+    font-family: "Brush Script MT";
+    color: #eb9316 !important;
+    font-size: 210%;
+}
+
+@media (max-width: 767px) {
+    .navbar-brand{
+        font-family: "Brush Script MT";
+        font-size: 130%;
+    }
+}
+
+div#templates{
+    display: none;
+}
+
+
+/**********************************/
+
+span.text-right{
+    float: right;
+}
+
+form label{
+    display: none;
+}
+
+input.poster{
+    width: 200px;
+}
+
+hr{
+    border-top: 1px solid #428bca;
+}
+
+p.topic {
+    font-size: 210%;
+    font-weight: 300;
+    line-height: 130%;
+}
+
+h1, h2, h3, h4, .navbar {
+    font-style: italic;
+}
+
+/**********************************/
+
+
+#timeremaining{
+    color: #428bca;
+}
+
+/**********************************/
+
+div.form{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+div.form h4 {
+    color: #999;
+}
+
+.btn {
+    color: #428bca;
+}
+
+.btn-fullsize{
+    width: 100%;
+}
+
+/**********************************/
+.messagehead {
+    margin-right: 0;
+    margin-left: 0;
+    background-color: #fff;
+    border-color: #ddd;
+    border-width: 1px 1px 0 1px;
+    border-radius: 4px 4px 0 0;
+    padding: 5px 0px;
+    border-style: none;
+    font-style: italic;
+}
+
+.messagetext {
+    padding: 14px 14px 0px;
+    margin-bottom: 14px;
+    font-size: 130%;
+    font-weight: 300;
+    line-height: 130%;
+}
+
+.messagetext p{
+    margin-bottom: 20px;
+}
+
+.message{
+    border-bottom: 1px solid #ddd;
+    padding: 0px 0px 15px;
+    margin-bottom: 15px;
+}
+
+div.message:last-child{
+    border-bottom: 1px solid #428bca;
+}
+
+.messagehead{
+    color: #999999;
+}
+
+.messagehead span.poster{
+    font-weight: bold;
+    color: #333;
+}
+
+
+.messagehead span.time{
+    color: #999999;
+}
+
+.messagehead span.votes {
+    color: #428bca;
+}
+
+.messagehead span.voting {
+    margin-left: 20px;
+    color: #428bca;
+}
+
+.messagehead span.voting a{
+    color: #428bca;
+}
+
+.messagehead span.voting a:hover {
+    color: #eb9316;
+}
+
+@media (max-width: 767px) {
+
+    .messagehead{
+        padding: 15px 14px;
+    }
+
+    .messagehead span.time{
+        display: none;
+    }
+
+    .messagehead span.voting{
+        margin-top: -8px;
+        font-size: 200%;
+    }
+
+    .messagehead span.votes {
+        clear: both;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .messagehead span.voting, .messagehead span.votes{
+        display: none;
+    }
+
+    .message:hover .messagehead span.voting, .message:hover .messagehead span.votes {
+        display: block;
+    }
+}
+/**********************************/
+
+.topicfoot {
+    margin-right: 0;
+    margin-left: 0;
+    background-color: #fff;
+    padding: 5px 14px;
+    color: #aaa;
+    font-style: italic;
+}
+
+.topicfoot span.votes{
+    /*color: #eb9316;*/
+    color: #428bca;
+}
+
+.topicfoot span.voting{
+    margin-left: 20px;
+    color: #428bca;
+}
+
+.topicfoot span.voting a{
+    color: #428bca;
+}
+
+.topicfoot span.voting a:hover {
+    color: #eb9316;
+}
+
+.topictext {
+    padding: 14px 14px;
+    margin-top: 14px;
+}
+
+.topicbox{
+    border-bottom: 1px solid #ddd;
+    padding: 0px 0px 15px;
+    margin-bottom: 15px;
+}
+
+div.topicbox:last-child{
+    border-bottom: 1px solid #428bca;
+}
+
+@media (max-width: 767px) {
+
+    .topicfoot{
+        padding: 15px 14px;
+    }
+
+    .topicfoot span.time{
+        display: none;
+    }
+
+    .topicfoot span.voting{
+        margin-top: -8px;
+        font-size: 200%;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .topicfoot span.voting, .topicfoot span.votes{
+        display: none;
+    }
+
+    .topicbox:hover .topicfoot span.voting, .topicbox:hover .topicfoot span.votes {
+        display: block;
+    }
+}
+
+/**********************************/

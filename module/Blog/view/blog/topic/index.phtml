@@ -1,0 +1,52 @@
+
+<h4>Topics:</h4>
+
+<hr/>
+
+<div class="topics">
+<?php foreach ($topics as $topic) : ?>
+    <div class="topicbox" id="topic<?php echo $topic->id; ?>">
+        <div class="topictext">
+            <p class="topic"><?php echo $this->escapeHtml($topic->topic);?></p>
+        </div>
+        <div class="topicfoot">
+            <span class="author">by <?php echo $this->escapeHtml($topic->createdBy);?></span>
+            <span class="time ago"><?php echo floor((time() - $topic->created->__toString()) / 60);?> minutes ago</span>
+
+            <span class="voting  text-right">
+                <a href="#" title="Vote for this topic."><span class="glyphicon glyphicon-thumbs-up"></span></a> /
+                <a href="#" title="Vote against this topic."><span class="glyphicon glyphicon-thumbs-down"></span></a>
+            </span>
+
+            <span class="votes text-right"> 123 Votes</span>
+        </div>
+    </div>
+<?php endforeach; ?>
+</div>
+
+
+<?php
+$form->setAttribute('action', $this->url('topic', array('action' => 'add')));
+$form->prepare();
+?>
+
+<div class="form">
+<h4>Suggest a topic:</h4>
+<?php echo $this->form()->openTag($form);?>
+<div class="form-group">
+    <?php echo $this->formInput($form->get('createdBy')
+        ->setAttribute('class', 'form-control poster')
+        ->setAttribute('placeholder', $form->get('createdBy')->getLabel())
+    );?>
+</div>
+<div class="form-group">
+    <?php echo $this->formTextArea($form->get('topic')
+        ->setAttribute('class', 'form-control blogmessage')
+        ->setAttribute('placeholder', $form->get('topic')->getLabel())
+        ->setAttribute('rows', '3'));?>
+</div>
+<div class="form-group text-right">
+    <?php echo $this->formSubmit($form->get('submit')->setAttribute('class', 'btn btn-default btn-fullsize'));?>
+</div>
+<?php echo $this->form()->closeTag();?>
+</div>

@@ -1,0 +1,65 @@
+<h4>Current Discussion</h4>
+
+<p class="topic">Politics / Obama beeing observed by the NSA against his will</p>
+
+<hr>
+<div class="messages">
+
+</div>
+
+<?php
+$form->setAttribute('action', $this->url('blog', array('action' => 'post')));
+$form->prepare();
+?>
+
+<div class="form">
+<h4>Leave a message: </h4>
+<?php echo $this->form()->openTag($form);?>
+    <div class="form-group">
+        <?php echo $this->formInput($form->get('poster')
+            ->setAttribute('class', 'form-control poster')
+            ->setAttribute('placeholder', $form->get('poster')->getLabel())
+        );?>
+    </div>
+    <div class="form-group">
+        <?php echo $this->formTextArea($form->get('text')
+            ->setAttribute('class', 'form-control blogmessage')
+            ->setAttribute('placeholder', $form->get('text')->getLabel())
+            ->setAttribute('rows', '7'));?>
+    </div>
+    <div class="form-group text-right">
+        <?php echo $this->formSubmit($form->get('submit')->setAttribute('class', 'btn btn-default btn-fullsize'));?>
+    </div>
+<?php echo $this->form()->closeTag();?>
+</div>
+
+
+
+<div id="templates">
+
+    <div class="message" id="" data-sec="" data-usec="">
+        <div class="messagehead">
+            <span class="poster"></span> wrote
+            <span class="time"></span>:
+            <span class="text-right voting">
+                <a href="#" title="Report this post offtopic."><span class="glyphicon glyphicon-ban-circle"></span></a> /
+                <a href="#" title="Vote this post up."><span class="glyphicon glyphicon-thumbs-up"></span></a> /
+                <a href="#" title="Vote this post down."><span class="glyphicon glyphicon-thumbs-down"></span></a>
+            </span>
+            <span class="text-right votes">3 Votes</span>
+        </div>
+        <div class="messagetext"><p></p></div>
+    </div>
+
+
+</div>
+
+<script>
+    var blogInstance = null;
+
+    $(document).ready(function(){
+        if(!blogInstance){
+            blogInstance = new Blog();
+        }
+    });
+</script>

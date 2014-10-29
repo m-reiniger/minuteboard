@@ -1,0 +1,138 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    /*background-color: #d9edf7;*/
+    background-color: #e1edf7;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/**********************************/
+
+span.text-right{
+    float: right;
+}
+
+form label{
+    display: block;
+}
+
+input.poster{
+    width: 200px;
+}
+
+hr{
+    border-top: 1px solid #FFF;
+}
+
+p.topic {
+    font-size: 210%;
+    font-weight: 300;
+    line-height: 130%;
+}
+
+/**********************************/
+
+
+#timeremaining{
+    color: #428bca;
+}
+
+/**********************************/
+.messagehead {
+    margin-right: 0;
+    margin-left: 0;
+    background-color: #fff;
+    border-color: #ddd;
+    border-width: 1px 1px 0 1px;
+    border-radius: 4px 4px 0 0;
+    padding: 5px 14px;
+    border-style: solid;
+}
+
+.messagetext {
+    padding: 14px 14px 20px;
+    margin-bottom: 14px;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    border-radius: 0 0 4px 4px;
+    font-size: 130%;
+    font-weight: 300;
+    line-height: 130%;
+}
+
+.messagehead span.poster{
+    color: #999999;
+}
+
+.messagehead span.poster strong{
+    color: #000;
+}
+
+.messagehead span.time{
+    color: #999999;
+}
+
+.messagehead span.actions a{
+    color: #999;
+}
+
+.messagehead span.actions a:hover {
+    color: #428bca;
+}
+
+@media (max-width: 767px) {
+    .messagehead span.time{
+        display: none;
+    }
+}
+
+/**********************************/
+
+.topicfoot {
+    margin-right: 0;
+    margin-left: 0;
+    background-color: #fff;
+    border-color: #ddd;
+    border-width: 0px 1px 1px 1px;
+    border-radius: 0 0 4px 4px;
+    padding: 5px 14px;
+    border-style: solid;
+    color: #aaa;
+}
+
+.topicfoot span.votes{
+    /*color: #eb9316;*/
+    color: #428bca;
+}
+
+.topicfoot span.voting{
+    margin-left: 20px;
+    color: #428bca;
+}
+
+.topictext {
+    padding: 14px 14px;
+    margin-top: 14px;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    border-radius: 4px 4px 0 0;
+}
+
+@media (max-width: 767px) {
+
+    .topicfoot{
+        padding: 15px 14px;
+    }
+
+    .topicfoot span.time{
+        display: none;
+    }
+
+    .topicfoot span.voting{
+        margin-top: -8px;
+        font-size: 200%;
+    }
+}
+
+/**********************************/
